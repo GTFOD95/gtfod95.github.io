@@ -1,0 +1,196 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: linear-gradient(145deg, #cacaca, #f0f0f0f0);
+    width: 100%;
+    height: 80px;
+    box-shadow: 7px 7px 14px #606060,
+                -5px -5px 10px #ffffff;
+}
+body{
+    background: url(./asset/couverturedoufelgou.jpg) no-repeat fixed center/cover;
+}
+header .recherche{
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 1.4rem;
+    background: white;
+    width: 25rem;
+    padding: 8px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 1.8rem;
+    cursor: pointer;
+    box-shadow: inset 5px 5px 10px #606060,
+                    inset -5px -5px 10px #ffffff;
+    text-shadow: inset 5px 5px 10px #606060,
+                    inset -5px -5px 10px #ffffff;
+}
+header .recherche input{
+    border-radius: 4rem;
+    width: 15rem;
+    padding: 6px;
+    border: 1px solid transparent;
+    background: rgb(230, 230, 230);
+    font-size: 1rem;
+    color: darkblue;
+    text-align: center;
+    font-style: italic;
+}
+header .recherche p{
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: 21rem;
+}
+header .navigation ul li{
+    margin-top: 1.4rem;
+    display: inline;
+    float:right;
+    margin-right: 3rem;
+    cursor: pointer;
+    box-shadow: inset 5px 5px 10px #606060,
+                    inset -5px -5px 10px #ffffff;
+    width: 8rem;
+    text-align: center;
+    height: 1.8rem;
+    border-radius: 15px;
+    text-shadow: inset 5px 5px 10px #606060,
+                    inset -5px -5px 10px #ffffff;
+
+}
+header .navigation ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: blue;
+    padding: 5px;
+    
+
+}
+header h3{
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    color: white;
+    text-shadow: 1px 2px 4px darkblue;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.8rem;
+    
+}
+footer{
+    background: white;
+    width: 100%;
+    height: 14rem;
+    margin: auto;
+    margin-top: 37.8rem;
+}
+footer h3{
+    margin-left: 8.3rem;
+    
+}
+footer .carte{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+footer .carte .boite{
+    background: linear-gradient(145deg, #cacaca, #f0f0f0f0);
+    width: 14rem;
+    height: 10rem;
+    border: 0.4rem solid rgb(248, 248, 248);
+    box-shadow: 7px 5px 10px #cacaca,
+                -7px -5px 10px #ffffff;
+    margin-left: 8rem;
+    margin-top: 0.7rem;
+
+}
+footer .carte .boite .imga img{
+    width: 13.2rem;
+    height: 6rem;
+}
+footer .carte .boite p{
+    text-align: center;
+    margin-top: 4px;
+}
+aside{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.452);
+    width: 30rem;
+    height: 34rem;
+    margin-top: 1rem;
+    box-shadow: 7px 6px 10px 0px black;
+}
+aside .bout{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 20rem;
+    margin-left: 4rem;
+    margin-top: 28rem;
+}
+aside .bout button{
+    padding: 10px;
+    border-radius: 4rem;
+    background: green;
+    color: white;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-weight: bold;
+    font-size: 1rem;
+    font-style: italic;
+}
+aside p{
+    position: absolute;
+    margin-top: 3rem;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+@media(max-width: 1080px){
+    footer .carte{
+        display: block;
+        grid-template-columns: 1fr;
+        background: white;
+    }
+    footer h3{
+         font-weight: bold;
+         color: darkblue;
+    }
+    footer .carte .boite:hover{
+        box-shadow: inset 5px 5px 10px #606060,
+                    inset -5px -5px 10px #ffffff;
+    }
+    footer .carte .boite{
+        display: block;
+        grid-template-columns: 1fr;
+    }
+    aside{
+        display: block;
+        grid-template-columns: 1fr;
+        width: 28rem;
+        margin-left: 2.1rem;
+    }
+    header{
+       background: black;
+       width: 28rem;
+       height: 20rem;
+       margin: auto;
+       margin-top: .2rem;
+    }
+    header h3{
+        text-align: center;
+        margin-left: 8rem;
+    }
+    header .recherche{
+        margin: 5rem;
+        margin-left: 1.4rem;
+    }
+    header .navigation ul li{
+        margin-top: 9rem;
+        display: block;
+    }
+}
